@@ -1,0 +1,21 @@
+.map-head h2{
+ margin-top: 40px;
+ margin-bottom:50px;
+}
+
+#map{
+	height: 500px;
+	width: 100%;
+	background-color: lightgreen;
+}
+
+button[title="Toggle fullscreen view"]{
+	display: none !important;
+}
+.gm-style-mtc{
+	display: none;
+}
+
+.gm-svpc{
+	display: none;
+}

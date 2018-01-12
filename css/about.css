@@ -1,0 +1,93 @@
+.bck-first{
+	background-color: #f4f4f4;
+}
+
+.mission{
+	max-width: 900px;
+	width: 100%;
+}
+
+.mission h1{
+	font-size: 70px;
+	color: #333333;
+	padding-top: 80px;
+	line-height: 1;
+}
+
+@media(max-width: 768px){
+	.mission h1{
+      font-size: 32px;
+      padding-top: 50px;
+	}
+}
+
+.know-him{
+  	display: -webkit-box;	 
+  	display: -moz-box;	
+  	display: -ms-flexbox; 
+  	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+@media(max-width: 768px){
+	.know-him{
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+}
+
+.img-know{
+	flex: 0 0 35%;
+	height: 450px;
+}
+
+@media(max-width: 768px){
+	.img-know{
+	flex: 0 0 100%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+}
+}
+
+.img-know img{
+	width: 100%;
+	height: 100%;
+}
+
+.story{
+	flex: 0 0 62%;
+}
+
+@media(max-width: 768px){
+.story{
+	flex: 0 0 100%;
+}
+}
+
+.story h2{
+	color: #333333;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+.founder{
+	font-size: 14px;
+	color: #ccc;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.details{
+	font-size: 16px;
+	font-weight: 300;
+	color: #747070;
+	line-height: 23px;
+}
