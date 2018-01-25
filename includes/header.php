@@ -69,7 +69,7 @@
 					</nav>
 		         </div>
 		         <!--Logo-->
-		         <div class="logo"><a href="#">LOGO</a></div>
+		         <div class="logo"><a href="index.php">LOGO</a></div>
 		         <!--Social links-->
 		          <div class="social-links-bar">
 			      <ul>

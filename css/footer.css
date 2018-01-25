@@ -57,6 +57,7 @@
 
    .copy-container{
 	flex: 0 0 100%;
+  margin-bottom: 20px;
     }
     
     .copy-container .text-center{

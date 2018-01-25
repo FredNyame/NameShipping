@@ -11,7 +11,7 @@
 				<p class="text-center"> &copy; Name Shipping Company, LLC.</p>
 			</div>
 			<div class="copy-container">
-				<p class="text-right"><span>Website Developed & Powered </span>By Fred Nyame</p>
+				<p class="text-right"><span>Designed &amp; Powered </span>By Fred Nyame</p>
 			</div>
 		</div>
 	</div>

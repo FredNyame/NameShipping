@@ -92,3 +92,10 @@
 	border-radius: 4px;
 	border: 1px solid #f4f4f4;
 }
+
+.error-form{
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
+  margin-bottom: 10px;
+}

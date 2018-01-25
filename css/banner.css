@@ -19,7 +19,7 @@
 	z-index: 1;
 	color: #fff;
 	text-align: center;
-	border-radius: 3.5px;
+	border-radius: 2px;
 	overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .banner-content h1{
-	font-size: 24px;
+	font-size: 19px;
 	font-weight: 400;
 	letter-spacing: -1px;
 	margin-top: 22px;
@@ -39,7 +39,7 @@
 }
 
 .banner-content h2{
-	font-size: 35px;
+	font-size: 30px;
 	letter-spacing: -1px;
 	margin-top: 22px;
 	margin-bottom: 30px;
@@ -59,7 +59,7 @@
 }
 
 .banner-content p{
-	font-size: 19px;
+	font-size: 16px;
 	font-weight: 100;
 	padding: 20px;
 }
