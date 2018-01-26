@@ -50,18 +50,37 @@
 .city-contain{
   flex: 0 0 30%;
 }
-
+.city-contain-select{
+  position: relative;
+  flex: 0 0 30%;
+}
+.city-contain-select::after{
+  content: '';
+  display: inline-block;
+  border-top: 7px solid #777;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: .5rem;
+  z-index: -1;
+  pointer-events: none;
+}
 @media(max-width: 768px){
  .city-contain{
   flex: 0 0 100%;
 }
-
+ .city-contain-select{
+  flex: 0 0 100%;
 }
-
-.name-container label, .email-container label, .phone-container label,  .date-container label, .list-area label, .address-container label, .city-contain label{
+}
+.city-contain-select label{
+  display: block;
+}
+.name-container label, .email-container label, .phone-container label,  .date-container label, .list-area label, .address-container label, .city-contain label, .city-contain-select label{
 	width: 100%;
 	color: #747070;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 600;
 }
@@ -84,18 +103,46 @@
 }
 }
 
-.name-container input, .email-container input, .phone-container input,  .date-container input, .list-area textarea, .address-container input, .city-contain input, .city-contain select{
+.name-container input, .email-container input, .phone-container input,  .date-container input, .list-area textarea, .address-container input, .city-contain input, .city-contain-select select{
 	width: 100%;
 	color: #333333;
 	padding: 12px 20px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	border-radius: 4px;
 	border: 1px solid #f4f4f4;
 }
+.city-contain-select select{
+  display: inline-block;
+  background-color: transparent;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  margin-bottom: 40px;
+}
+ .pickup-form input[type='submit']{
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 30px;
+  //margin-left: 20px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: #C12B2B;
+  padding: 15px 25px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  cursor: pointer;
+}
 
 .error-form{
+  position: absolute;
+  margin-top: 80px;
   font-size: 16px;
   font-weight: 600;
   color: red;
   margin-bottom: 10px;
+}
+
+.city-contain-select .error-form{
+ margin-top: -38px; 
 }

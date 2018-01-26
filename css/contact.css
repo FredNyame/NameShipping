@@ -86,16 +86,21 @@
 .input-container i{
   padding-right: 10px;
 }
-
+.input-content-select{
+	position: relative;
+	flex: 0 0 70%;	
+	padding-top: 18px;
+	padding-bottom: 25px;
+	//border: 1px solid black;
+}
 .input-content{
  flex: 0 0 70%;
- //border: 1px solid green;
  padding-top: 18px;
  padding-bottom: 25px;
 }
 
 @media(max-width: 768px){
- .input-content{
+ .input-content,  .input-content-select{
  	flex: 0 0 100%;
  	text-align: center;
  }
@@ -119,13 +124,13 @@
   color: #a9a9a9;
 }
 
-.input-container select{
+.input-content-select select{
 	width: 100%;
+	position: relative;
 	font-size: 16px;
-	color: #333333;
+	color: #333;
 	padding: 10px 20px;
 	border: 0px;
-	outline: 0px;
 }
 
 .input-container select option{
@@ -137,7 +142,15 @@
     color: #333333;
     background-color: #f4f4f4;
 }
-
+/*.input-content-select::after{
+	content: "\f13a";
+	font-family: "FontAwesome";
+    position: absolute;
+    top: 10px;
+    right: .5rem;
+    z-index: -1;
+    pointer-events: none;
+}*/
 .input-container textarea{
 	width: 95%;
 	font-size: 16px;
@@ -151,7 +164,7 @@
 	border-radius: 4px;
 }
 
- input[type='submit']{
+.contact-form input[type='submit']{
 	color: #fff;
 	font-weight: 500;
 	font-size: 16px;

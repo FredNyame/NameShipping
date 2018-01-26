@@ -45,7 +45,7 @@ include("includes/form-pickup.php");
 						<input type="text" name="city" placeholder="e.g Bronx" id="city" value="<?php echo isset($_POST['city']) ? $city : ''; ?>">
 						<p class="error-form"><?php echo $cityErr; ?></p>
 					</div>
-					<div class="city-contain">
+					<div class="city-contain-select">
 						<label for="state">State</label>
 					<select name="state">
 						<option value="">Choose...</option>
@@ -75,7 +75,7 @@ include("includes/form-pickup.php");
 				</div>
 				<div class="list-area">
 					<label for="List">List your items</label>
-					<textarea name="list" rows="8" cols="30" placeholder="List all items to be pick" id="list"> <?php echo isset($_POST['list']) ? $list : ''; ?> </textarea>
+					<textarea name="list" rows="8" cols="30"  placeholder="List all items to be pick" id="list"> <?php echo isset($_POST['list']) ? $list : ''; ?> </textarea>
 					<p class="error-form"><?php echo $listErr; ?></p>
 				</div>
 				<input type="submit" name="submit" id="sendInfor" value="Pick my item">

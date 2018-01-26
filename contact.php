@@ -37,7 +37,7 @@
  		<input type="text" name="phone" placeholder="+0012345904842">-->
  		<div class="input-container">
  			<label for="subject"><i class="fa fa-comments" aria-hidden="true"></i>Subject <span>*</span></label>
- 			<div class="input-content">
+ 			<div class="input-content-select">
  				<select name="subject" id="subject">
  					<option value="">Select a subject</option>
  					<option value="Pickup" <?php echo $subject == 'Pickup' ? 'selected' : ''; ?> >Pickup</option>

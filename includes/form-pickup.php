@@ -115,12 +115,10 @@
         $dateErr = "Date field is required";
    }
 
-   if(!empty($_POST['list'])){
-     //store variable
-     $list = inspectInput($_POST['list']);
+    if(!empty($_POST['list'])){
+        $list = inspectInput($_POST['list']);
    } else {
-     //give error msg if it empty
-   $listErr = "List field is required";
+        $listErr = "List field is required";
    }
 
    //if there is no errors do this
