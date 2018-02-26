@@ -16,8 +16,8 @@
   font-weight: 300;
   color: #333333;
   line-height: 22px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 @media(max-width: 768px){
@@ -108,8 +108,17 @@
 	color: #333333;
 	padding: 12px 20px;
 	margin-bottom: 40px;
+  outline: none;
 	border-radius: 4px;
 	border: 1px solid #f4f4f4;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+.name-container input:focus, .email-container input:focus, .phone-container input:focus,  .date-container input:focus, .list-area textarea:focus, .address-container input:focus, .city-contain input:focus, .city-contain-select select:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 .city-contain-select select{
   display: inline-block;
@@ -132,8 +141,15 @@
   padding: 15px 25px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
   cursor: pointer;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
 }
 
+.pickup-form input[type='submit']:hover{
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
 .error-form{
   position: absolute;
   margin-top: 80px;
@@ -145,4 +161,9 @@
 
 .city-contain-select .error-form{
  margin-top: -38px; 
+}
+
+.error:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
