@@ -20,8 +20,7 @@
 }
 
 .menu-bar{
-	//width: 50px;
-	//border: 1px solid red;
+	flex-basis: calc(30%);
 }
 
 .menu-bar .fa-bars{
@@ -37,7 +36,8 @@
 
 .logo{
 	font-size: 35px;
-	//border: 1px solid;
+	flex-grow: 1;
+	text-align: center;
 }
 
 .logo a{
@@ -49,7 +49,8 @@
 }
 
 .social-links-bar{
-	//border: 1px solid;
+	flex-basis: calc(30%);
+	text-align: right;
 }
 
 .social-links-bar ul li{
@@ -121,6 +122,11 @@
 }
 
 @media(max-width: 768px){
+	.logo{
+	font-size: 25px;
+	flex-grow: 0;
+	text-align: right;
+}
   .social-links-mobile{
 	display: block;
 }
