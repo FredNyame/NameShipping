@@ -31,7 +31,7 @@ include("includes/form-pickup.php");
 				</div>
 				<div class="phone-container">
 					<label for="phone">Phone</label>
-					<input type="tel" name="phone" placeholder="e.g +241-454-2345" id="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>">
+					<input type="tel" name="phone" placeholder="e.g +2414542345" id="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>">
 					<p class="error-form"><?php echo $phoneErr; ?></p>
 				</div>
 				<div class="address-container">
@@ -75,7 +75,7 @@ include("includes/form-pickup.php");
 				</div>
 				<div class="list-area">
 					<label for="List">List your items</label>
-					<textarea name="list" rows="8" cols="30"  placeholder="List all items to be pick" id="list"> <?php echo isset($_POST['list']) ? $list : ''; ?> </textarea>
+					<textarea id="list" name="list" rows="15" cols="30"  placeholder="List all items to be pick up"></textarea>
 					<p class="error-form"><?php echo $listErr; ?></p>
 				</div>
 				<input type="submit" name="submit" id="sendInfor" value="Pick my item">
