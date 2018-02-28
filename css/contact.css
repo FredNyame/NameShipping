@@ -113,7 +113,9 @@
 	//border: 1px solid red;
 	padding: 10px 20px;
 	border: 0px;
+	outline: 0px;
 }
+
 
 ::placeholder{
 	color: #a9a9a9;
@@ -123,6 +125,18 @@
 ::-ms-input-placeholder{
   color: #a9a9a9;
 }
+
+::-webkit-input-placeholder { -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { transition: opacity .5s; } /* Modern Browsers */
+
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */
 
 .input-content-select select{
 	width: 100%;
